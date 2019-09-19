@@ -4,7 +4,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="shortcut icon" href="/favicon.ico">
+		<meta name="robots" content="noindex, nofollow">
+        <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -14,6 +15,9 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="assets/js/init.js"></script>
+
+        <!-- Smooth Scroll -->
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 
         <!-- Slick -->
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -66,13 +70,16 @@
                         <h2>Vel volutpat elit finibus a h2</h2>
                         <p>Sed vel porttitor urna. Phasellus placerat ornare cursus.</p>
                         <p>Epsum vitae risus elementum condimentum quis a elit. Suspendisse diam ipsum, congue sit amet dapibus et, rutrum malesuada elit</p>
-                        <div class="cabi_block__button"><a href="#" class="cabi_block__link cabi_block__cta">Call to action</a></div>
+                        <div class="cabi_block__button"><a data-scroll href="#footer" class="cabi_block__link cabi_block__cta">Call to action</a></div>
                     </div>
                     <div class="cabi_block--form col-md-6">
-                        <form method="post" action="thank-you.html">
+                        <form id="informazioni" method="post" action="thank-you.html">
                             <input class="cabi_block--input" placeholder="Il tuo nome" type="text" name="nome" id="nome">
                             <input class="cabi_block--input" placeholder="La tua email" type="email" name="email" id="email">
-                            <p><input type="checkbox" name="privacy" id="privacy">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit. Aenean ut consectetur turpis, sit amet aliquam nulla. Ut auctor quam ac quam semper porttitor.</p>
+                            <div class="privacy_container">
+                                <input type="checkbox" name="privacy" id="privacy">
+                                <a href="#" target="_blank">Dichiaro di aver preso visione della informativa privacy</a> ai sensi dell’Art. 13 del Reg. UE 679/2016 e, autorizzo il trattamento dei miei dati personali, in relazione a quanto ivi indicato.
+                            </div>
                             <input class="cabi_block--submit" type="submit" value="Invia">
                         </form>
                         </div>
@@ -111,6 +118,24 @@
                         <div class="cabi_block__button cabi_block__button--right"><a href="#" class="cabi_block__link cabi_block__cta">Call to action</a></div>
                     </div>
                 </div>
+            </div>
+        </section>
+		
+		<section class="cabi_block cabi_block__chessboard">
+            <div>
+                <img src="https://picsum.photos/200">
+            </div>
+            <div>
+                <img src="https://picsum.photos/200">
+            </div>
+            <div>
+                <img src="https://picsum.photos/200">
+            </div>
+            <div>
+                <img src="https://picsum.photos/200">
+            </div>
+            <div>
+                <img src="https://picsum.photos/200">
             </div>
         </section>
 
@@ -214,7 +239,7 @@
                 </div>
             </section>
             
-            <footer class="cabi_block cabi_block--footer">
+            <footer id="footer" class="cabi_block cabi_block--footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -224,8 +249,8 @@
                         </div>
                         <div class="col-md-6 cabi_block__social">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a rel="noopener" target="blank" href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a rel="noopener" target="blank" href="#"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
