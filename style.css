@@ -155,6 +155,10 @@ strong {
     text-align: right;
 }
 
+.cabi_block--adorned {
+    background: url('https://picsum.photos/300') no-repeat 100% 100% !important; 
+}
+
 /* HERO ================================== */
 
 .cabi_block--hero {
@@ -260,18 +264,18 @@ strong {
 
 /* CHESSBOARD ============================ */
 
-.cabi_block__chessboard {
+.cabi_block--chessboard {
     padding: 0 !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.cabi_block__chessboard > div {
+.cabi_block--chessboard > div {
     flex-grow: 1;
 }
 
-.cabi_block__chessboard img {
+.cabi_block--chessboard img {
     display: block;
     width: 100%;
 }
